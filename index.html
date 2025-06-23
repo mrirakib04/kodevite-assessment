@@ -82,6 +82,7 @@
             </select>
             <div class="flex items-center md:gap-2 gap-3">
               <button
+                id="login_btn"
                 class="md:py-1 md:px-4 md:border-2 md:rounded-lg md:hover:bg-black md:duration-300 md:hover:text-white cursor-pointer"
               >
                 <span class="md:block hidden text-base font-medium">Login</span>
@@ -91,6 +92,7 @@
                 ></span>
               </button>
               <button
+                id="signup_btn"
                 class="md:py-1 md:px-4 md:border-2 md:rounded-lg md:hover:bg-black md:duration-300 md:hover:text-white cursor-pointer"
               >
                 <span class="md:block hidden text-base font-medium"
@@ -148,7 +150,11 @@
                 type="password"
                 required
               />
-              <button id="eye_btn" class="absolute top-10 right-5 text-lg">
+              <button
+                type="button"
+                id="eye_btn"
+                class="absolute top-10 right-5 text-lg"
+              >
                 <i id="eye" class="fa-solid fa-eye"></i>
               </button>
               <p id="password_direction" class="text-gray-500 text-sm">
@@ -204,11 +210,16 @@
               </label>
             </div>
             <button
+              type="submit"
               class="mt-2 w-1/2 py-2 bg-gray-400 rounded-full text-white font-semibold text-lg"
             >
               Sign Up
             </button>
           </form>
+          <p>
+            Already have an account?
+            <button id="login_btn_bottom" class="font-semibold">Login</button>
+          </p>
         </div>
 
         <!-- login form -->
@@ -245,8 +256,12 @@
                 type="password"
                 required
               />
-              <button id="eye_btn" class="absolute top-10 right-5 text-lg">
-                <i id="eye" class="fa-solid fa-eye"></i>
+              <button
+                type="button"
+                id="l_eye_btn"
+                class="absolute top-10 right-5 text-lg"
+              >
+                <i id="l_eye" class="fa-solid fa-eye"></i>
               </button>
             </div>
 
@@ -269,11 +284,18 @@
               </label>
             </div>
             <button
+              type="submit"
               class="mt-2 w-1/2 py-2 bg-gray-400 rounded-full text-white font-semibold text-lg"
             >
               Login
             </button>
           </form>
+          <p>
+            New to this website?
+            <button id="signup_btn_bottom" class="font-semibold">
+              Sign Up
+            </button>
+          </p>
         </div>
       </div>
     </main>
