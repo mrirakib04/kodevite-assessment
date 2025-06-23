@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Md Rakibul Islam Rakib" />
     <title>Kodevite's Assessment by Md. Rakibul Islam Rakib</title>
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -105,7 +106,177 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="w-full grid lg:grid-cols-5 sm:grid-cols-6">
+        <img
+          class="lg:col-span-3 sm:col-span-3 w-full h-full object-cover"
+          src="./assets/img/bubble-image.jpg"
+          alt="bubble-image"
+        />
+
+        <!-- sign up form -->
+        <div
+          id="signup_form"
+          class="flex flex-col lg:col-span-2 sm:col-span-3 w-10/12 mx-auto py-5"
+        >
+          <div class="flex flex-col">
+            <h3 class="text-3xl font-semibold">Sign Up</h3>
+            <p class="text-gray-600 font-medium">
+              Sign up for free to access to in any of our products.
+            </p>
+          </div>
+
+          <form class="flex flex-col gap-2 mt-5">
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-lg font-medium text-gray-800">
+                Email Address:
+              </label>
+              <input
+                class="border-2 border-gray-400 p-2 rounded-xl"
+                id="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="flex flex-col gap-1 relative">
+              <label for="password" class="text-lg font-medium text-gray-800">
+                Password:
+              </label>
+              <input
+                class="border-2 border-gray-400 p-2 rounded-xl"
+                id="password"
+                type="password"
+                required
+              />
+              <button id="eye_btn" class="absolute top-10 right-5 text-lg">
+                <i id="eye" class="fa-solid fa-eye"></i>
+              </button>
+              <p id="password_direction" class="text-gray-500 text-sm">
+                Use 8 or more characters with a mix of letters, numbers &
+                symbols.
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <input
+                class="border-2 border-gray-400 p-2"
+                id="terms_check"
+                type="checkbox"
+                required
+              />
+              <label
+                for="terms_check"
+                class="lg:text-lg text-sm font-normal text-gray-800"
+              >
+                Agree to our <span class="underline">Terms of use</span> and
+                <span class="underline">Privicy Policy.</span>
+              </label>
+            </div>
+            <div class="flex gap-1">
+              <input
+                class="border-2 border-gray-400 p-2"
+                id="subscribtion_check"
+                type="checkbox"
+              />
+              <label
+                for="subscribtion_check"
+                class="lg:text-lg text-sm font-normal text-gray-800"
+              >
+                Subscribe to our monthly newsletter.
+              </label>
+            </div>
+
+            <div class="flex gap-1 p-3 rounded-lg border-2 border-blue-600">
+              <input
+                class="border-2 border-gray-400 p-2"
+                id="captcha_check"
+                type="checkbox"
+              />
+              <label
+                for="captcha_check"
+                class="w-full text-lg font-normal text-gray-800 flex items-center justify-between"
+              >
+                I'm not a robot.
+                <img
+                  class="w-10 h-10"
+                  src="./assets/img/captcha_check.png"
+                  alt="captcha-image"
+                />
+              </label>
+            </div>
+            <button
+              class="mt-2 w-1/2 py-2 bg-gray-400 rounded-full text-white font-semibold text-lg"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+
+        <!-- login form -->
+        <div
+          id="login_form"
+          class="hidden lg:col-span-2 sm:col-span-3 w-10/12 mx-auto py-5"
+        >
+          <div class="flex flex-col">
+            <h3 class="text-3xl font-semibold">Login</h3>
+            <p class="text-gray-600 font-medium">
+              Login to access to in any of our products.
+            </p>
+          </div>
+
+          <form class="flex flex-col gap-2 mt-5">
+            <div class="flex flex-col gap-1">
+              <label for="l_email" class="text-lg font-medium text-gray-800">
+                Email Address:
+              </label>
+              <input
+                class="border-2 border-gray-400 p-2 rounded-xl"
+                id="l_email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="flex flex-col gap-1 relative">
+              <label for="l_password" class="text-lg font-medium text-gray-800">
+                Password:
+              </label>
+              <input
+                class="border-2 border-gray-400 p-2 rounded-xl"
+                id="l_password"
+                type="password"
+                required
+              />
+              <button id="eye_btn" class="absolute top-10 right-5 text-lg">
+                <i id="eye" class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+
+            <div class="flex gap-1 p-3 rounded-lg border-2 border-blue-600">
+              <input
+                class="border-2 border-gray-400 p-2"
+                id="l_captcha_check"
+                type="checkbox"
+              />
+              <label
+                for="l_captcha_check"
+                class="w-full text-lg font-normal text-gray-800 flex items-center justify-between"
+              >
+                I'm not a robot.
+                <img
+                  class="w-10 h-10"
+                  src="./assets/img/captcha_check.png"
+                  alt="captcha-image"
+                />
+              </label>
+            </div>
+            <button
+              class="mt-2 w-1/2 py-2 bg-gray-400 rounded-full text-white font-semibold text-lg"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer></footer>
 
     <script src="./script.js"></script>
